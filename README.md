@@ -12,7 +12,7 @@ This project demonstrates the containerization of a **multi-tier Java web applic
 - Docker Compose
 - Vagrant
 - Java
-- Apache HTTP Server
+- Tomcat server 10 with JDK21
 - MySQL
 - Shell Scripting
 
@@ -23,7 +23,7 @@ This project demonstrates the containerization of a **multi-tier Java web applic
 containerized-java-webapp/
 ├── app/ # Java app Dockerfile and source
 ├── db/ # MySQL Dockerfile and schema
-├── web/ # Apache web server Dockerfile
+├── web/ # Tomcat server Dockerfile
 ├── docker-compose.yml # Orchestration file
 ├── Vagrantfile # Virtual machine provisioning
 ├── screenshots/ # Demo images
