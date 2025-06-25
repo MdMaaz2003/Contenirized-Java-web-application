@@ -1,25 +1,30 @@
-# Prerequisites
-#
-- JDK 11 
-- Maven 3 
-- MySQL 8
+# ☁️ Containerized Java Web Application
 
-# Technologies 
-- Spring MVC
-- Spring Security
-- Spring Data JPA
-- Maven
-- JSP
-- Tomcat
+## 🧩 Project Overview
+
+This project demonstrates the containerization of a **multi-tier Java web application** using **Docker** and **Vagrant**. It includes separate containers for the **App**, **Database**, and **Web** tiers. The setup is fully automated and runs inside a local virtual environment powered by Vagrant.
+
+---
+
+## 🛠️ Tools & Technologies Used
+
+- Docker
+- Docker Compose
+- Vagrant
+- Java
+- Apache HTTP Server
 - MySQL
-- Memcached
-- Rabbitmq
-- ElasticSearch
-# Database
-Here,we used Mysql DB 
-sql dump file:
-- /src/main/resources/db_backup.sql
-- db_backup.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < db_backup.sql
+- Shell Scripting
 
+---
 
+## 📂 Project Structure
+
+containerized-java-webapp/
+├── app/ # Java app Dockerfile and source
+├── db/ # MySQL Dockerfile and schema
+├── web/ # Apache web server Dockerfile
+├── docker-compose.yml # Orchestration file
+├── Vagrantfile # Virtual machine provisioning
+├── screenshots/ # Demo images
+└── README.md
